@@ -1,0 +1,8 @@
+version: "3.4"
+services:
+  ap_three_demo:
+    build: .
+    container_name: ap_three_demo
+    ports:
+      - 3050:80
+    tty: true
