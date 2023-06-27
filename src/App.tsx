@@ -1,7 +1,7 @@
 import "./App.css";
 import { Canvas } from "@react-three/fiber";
 import { Grid, OrbitControls } from "@react-three/drei";
-import { useControls } from "leva";
+import { Leva, useControls } from "leva";
 import { Scan } from "./Components/Scan";
 import { useRef } from "react";
 import Lights from "./Components/Lights";
@@ -30,6 +30,7 @@ function App() {
 
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
+      <Leva collapsed />
       <Canvas
         shadows
         onDoubleClick={(e) => {
